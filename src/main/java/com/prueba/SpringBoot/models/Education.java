@@ -15,24 +15,18 @@ public class Education {
     @Id 
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-    
-    //private long idIdioma;
     private String institucion;
     private String periodo;
     private String  titulo;
-    private boolean completo;
-    private String descripcion;
 
     public Education() {
     }
 
-    public Education(Long id, String institucion, String periodo, String titulo, boolean completo, String descripcion) {
-        this.id = id;
+    public Education(String institucion, String periodo, String titulo) {
         this.institucion = institucion;
         this.periodo = periodo;
         this.titulo = titulo;
-        this.completo = completo;
-        this.descripcion = descripcion;
     }
-    
+
+      
 }

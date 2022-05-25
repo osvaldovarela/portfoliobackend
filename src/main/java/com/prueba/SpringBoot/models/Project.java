@@ -16,7 +16,6 @@ public class Project {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-    
     private String nombre;
     private String imagen;
     private String enlace;
@@ -25,12 +24,13 @@ public class Project {
     public Project() {
     }
 
-    public Project(Long id, String nombre, String imagen, String enlace, String detalle) {
-        this.id = id;
+    public Project(String nombre, String imagen, String enlace, String detalle) {
         this.nombre = nombre;
         this.imagen = imagen;
         this.enlace = enlace;
         this.detalle = detalle;
     }
+
+   
     
 }

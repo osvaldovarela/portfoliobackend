@@ -16,26 +16,23 @@ public class Experience {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long  id;
-    
-    
     private String periodo;
-    private String nombre;
+    private String empresa;
     private String puesto;
-    private String tareas;
-    private String tipo;
-    private boolean actual;
+    
+    
     
     
      public Experience() {
     }
 
-    public Experience(Long id, String periodo, String nombre, String puesto, String tareas, String tipo, boolean actual) {
-        this.id = id;
+    public Experience(String periodo, String empresa, String puesto) {
         this.periodo = periodo;
-        this.nombre = nombre;
+        this.empresa = empresa;
         this.puesto = puesto;
-        this.tareas = tareas;
-        this.tipo = tipo;
-        this.actual = actual;
     }
+
+    
+
+    
 }
