@@ -29,6 +29,22 @@ public class Persona {
 
     @Column(name = "Img", length = 2048)
     private String img;
+    
+    private String banner;
+    
+    private String titulo;
 
+    public Persona() {
+    }
 
-}
+    public Persona(Long id, String nombre, String apellido, String img, String banner, String titulo) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.img = img;
+        this.banner = banner;
+        this.titulo = titulo;
+    }
+    
+   
+   }
