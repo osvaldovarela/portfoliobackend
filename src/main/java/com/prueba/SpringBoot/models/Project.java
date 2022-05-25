@@ -11,7 +11,7 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-public class Proyecto {
+public class Project {
     
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -22,10 +22,10 @@ public class Proyecto {
     private String enlace;
     private String detalle;
 
-    public Proyecto() {
+    public Project() {
     }
 
-    public Proyecto(Long id, String nombre, String imagen, String enlace, String detalle) {
+    public Project(Long id, String nombre, String imagen, String enlace, String detalle) {
         this.id = id;
         this.nombre = nombre;
         this.imagen = imagen;

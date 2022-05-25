@@ -10,7 +10,7 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-public class Educacion {
+public class Education {
     
     @Id 
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -23,10 +23,10 @@ public class Educacion {
     private boolean completo;
     private String descripcion;
 
-    public Educacion() {
+    public Education() {
     }
 
-    public Educacion(Long id, String institucion, String periodo, String titulo, boolean completo, String descripcion) {
+    public Education(Long id, String institucion, String periodo, String titulo, boolean completo, String descripcion) {
         this.id = id;
         this.institucion = institucion;
         this.periodo = periodo;

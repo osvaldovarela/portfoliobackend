@@ -11,7 +11,7 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-public class Experiencia {
+public class Experience {
     
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -26,10 +26,10 @@ public class Experiencia {
     private boolean actual;
     
     
-     public Experiencia() {
+     public Experience() {
     }
 
-    public Experiencia(Long id, String periodo, String nombre, String puesto, String tareas, String tipo, boolean actual) {
+    public Experience(Long id, String periodo, String nombre, String puesto, String tareas, String tipo, boolean actual) {
         this.id = id;
         this.periodo = periodo;
         this.nombre = nombre;
