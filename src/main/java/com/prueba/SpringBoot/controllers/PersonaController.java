@@ -16,11 +16,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
+
+
 public class PersonaController {
+    
 
-    @Autowired IPersonaService ipersonaService;
 
-    @GetMapping("/personas/traer")
+    @Autowired private IPersonaService ipersonaService;
+  
+     @GetMapping("/personas/traer")
     public List<Persona> getPersona() {
         return ipersonaService.getPersona();
     }
@@ -58,5 +62,5 @@ public class PersonaController {
     public Persona findpersona(){
         return ipersonaService.findPersona((long)1);
     }
-
+   
 }

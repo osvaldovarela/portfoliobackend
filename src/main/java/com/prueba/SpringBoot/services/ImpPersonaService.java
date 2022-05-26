@@ -7,7 +7,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.prueba.SpringBoot.repositories.IPersonaRepository;
 
-@Service 
+@Service
 public class ImpPersonaService implements IPersonaService {
     @Autowired IPersonaRepository ipersonaRepository;
 

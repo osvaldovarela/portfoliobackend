@@ -23,8 +23,4 @@ public class About {
     public About(String text) {
         this.text = text;
     }
-    
-    
-    
-    
 }
